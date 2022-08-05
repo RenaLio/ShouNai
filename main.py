@@ -63,7 +63,7 @@ async def send_welcome(message):
  /reply\_json 查询message\_reply\_json
  /all\_json 查询所有json信息
 
-  [Official Channel](https://t\.me/QsBotChannel) \| [Github](https://github\.com)
+  [Official Channel](https://t\.me/hounaiBotChannel) \| [Github](https://github\.com)
   ''' % botname
     await bot.reply_to(message,
                        help_text,
@@ -148,7 +148,6 @@ async def start_message(message):
 @bot.message_handler(commands=['del'])
 async def del_msge(message):
     num = telebot.util.extract_arguments(message.text)
-    print(num)
     if num == None:
         return
     else:
